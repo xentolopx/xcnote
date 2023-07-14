@@ -216,7 +216,7 @@ class PHPTelebot
         $get = self::$getUpdates;
         $run = false;
 
-        if (isset($get['message']['date']) && $get['message']['date'] < (time() - 120)) {
+        if (isset($get['message']['date']) && $get['message']['date'] < (time() - 60)) {
             return '-- Pass --';
         }
 
